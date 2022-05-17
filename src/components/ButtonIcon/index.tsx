@@ -20,9 +20,9 @@ export function ButtonIcon({title, ...rest}: Props) {
             style={styles.container}
             {...rest}
         >
-            <View style={styles.iconWrapper}>
-                <Image source={DiscordImg} style={styles.icon}/>
-            </View>
+            {/*<View style={styles.iconWrapper}>*/}
+            {/*    <Image source={DiscordImg} style={styles.icon}/>*/}
+            {/*</View>*/}
 
             <Text style={styles.title}>
                 {title}
