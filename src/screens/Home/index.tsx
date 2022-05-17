@@ -68,7 +68,7 @@ export function Home() {
                 />
 
                 <View style={styles.content}>
-                    <ListHeader title={"partidas agendadas"} subtitle={"Total 6"}/>
+                    <ListHeader title={"Vinhos cadastrados"} subtitle={"Total 6"}/>
 
                     <FlatList
                         data={appointments}

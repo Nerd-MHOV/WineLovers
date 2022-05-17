@@ -21,7 +21,7 @@ export function Profile() {
                 </View>
 
                 <Text style={styles.message}>
-                    Hoje é dia de vinho!
+                    É dia de um bom vinho!
                 </Text>
             </View>
 
