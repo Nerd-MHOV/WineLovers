@@ -2,7 +2,7 @@ import {styles} from "./styles";
 import {Image} from "react-native";
 
 export function GuildIcon(){
-    const uri = "https://seeklogo.com/images/D/discord-icon-new-2021-logo-09772BF096-seeklogo.com.png"
+    const uri = "https://www.flaticon.com/br/premium-icon/icons/svg/3447/3447716.svg"
     return(
         <Image
             source={{uri}}

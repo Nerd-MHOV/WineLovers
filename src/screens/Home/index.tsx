@@ -21,7 +21,7 @@ export function Home() {
             id: '1',
             guild: {
                 id: '1',
-                name: 'Lendários',
+                name: 'Doppio Passo',
                 icon: null,
                 owner: true
             },
@@ -33,11 +33,11 @@ export function Home() {
             id: '1',
             guild: {
                 id: '1',
-                name: 'Lendários',
+                name: 'Perez Cruz',
                 icon: null,
                 owner: true
             },
-            category: '1',
+            category: '2',
             date: '22/06 às 20:40h',
             description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
         }
