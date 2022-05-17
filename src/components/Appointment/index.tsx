@@ -60,7 +60,7 @@ export function Appointment({data, ...rest}: Props) {
                             <PlayerSvg fill={owner ? primary : on} />
 
                             <Text style={[styles.player, {color: owner ? primary : on}]}>
-                                {owner ? 'Anfitrião' : 'Visitante'}
+                                {owner ? 'Adega 01' : 'Visitante'}
                             </Text>
                         </View>
                     </View>
