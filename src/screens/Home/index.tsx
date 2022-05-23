@@ -6,7 +6,7 @@ import {ButtonAdd} from "../../components/ButtonAdd";
 import {CategorySelect} from "../../components/CategorySelect";
 import {ListHeader} from "../../components/ListHeader";
 import {Appointment} from "../../components/Appointment";
-import {ListDivider} from "../../components/ListDivider/indes";
+import {ListDivider} from "../../components/ListDivider";
 import {Background} from "../../components/Background";
 import {useNavigation} from "@react-navigation/native";
 import {AppointmentDetails} from "../AppointmentDetails";
@@ -52,13 +52,18 @@ export function Home() {
         navigation.navigate('AppointmentDetails');
     }
 
+    function handleAppointmentCreate () {
+        // @ts-ignore
+        navigation.navigate('AppointmentCreate');
+    }
+
     return (
         <Background>
             <View style={styles.container}>
 
                 <View style={styles.header}>
                     <Profile/>
-                    <ButtonAdd/>
+                    <ButtonAdd onPress={handleAppointmentCreate}/>
                 </View>
 
 
