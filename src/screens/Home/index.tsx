@@ -40,6 +40,54 @@ export function Home() {
             category: '2',
             date: '22/06 às 20:40h',
             description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
+        },
+        {
+            id: '1',
+            guild: {
+                id: '1',
+                name: 'Perez Cruz',
+                icon: null,
+                owner: true
+            },
+            category: '2',
+            date: '22/06 às 20:40h',
+            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
+        },
+        {
+            id: '1',
+            guild: {
+                id: '1',
+                name: 'Perez Cruz',
+                icon: null,
+                owner: true
+            },
+            category: '2',
+            date: '22/06 às 20:40h',
+            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
+        },
+        {
+            id: '1',
+            guild: {
+                id: '1',
+                name: 'Perez Cruz',
+                icon: null,
+                owner: true
+            },
+            category: '2',
+            date: '22/06 às 20:40h',
+            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
+        },
+        {
+            id: '1',
+            guild: {
+                id: '1',
+                name: 'Perez Cruz',
+                icon: null,
+                owner: true
+            },
+            category: '2',
+            date: '22/06 às 20:40h',
+            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
         }
     ]
 
@@ -72,18 +120,17 @@ export function Home() {
                     setCategory={handleCategorySelect}
                 />
 
-                <View style={styles.content}>
-                    <ListHeader title={"Vinhos cadastrados"} subtitle={"Total 6"}/>
+                <ListHeader title={"Vinhos cadastrados"} subtitle={"Total 6"}/>
 
-                    <FlatList
-                        data={appointments}
-                        keyExtractor={item => item.id}
-                        renderItem={({item}) => (<Appointment data={item} onPress={handleAppointmentDetails}/>)}
-                        ItemSeparatorComponent={() => <ListDivider/>}
-                        style={styles.matches}
-                        showsVerticalScrollIndicator={false}
-                    />
-                </View>
+                <FlatList
+                    data={appointments}
+                    keyExtractor={item => item.id}
+                    renderItem={({item}) => (<Appointment data={item} onPress={handleAppointmentDetails}/>)}
+                    ItemSeparatorComponent={() => <ListDivider/>}
+                    contentContainerStyle={{ paddingBottom: 69}}
+                    style={styles.matches}
+                    showsVerticalScrollIndicator={false}
+                />
 
             </View>
         </Background>
