@@ -1,32 +1,36 @@
-import { useFonts } from "expo-font"
+import {useFonts} from "expo-font"
 import AppLoading from "expo-app-loading";
-import { Inter_400Regular, Inter_500Medium } from "@expo-google-fonts/inter";
-import { Rajdhani_500Medium, Rajdhani_700Bold } from "@expo-google-fonts/rajdhani";
-import { StatusBar } from "react-native";
-import { Routes } from "./src/routes/"
-import { Background } from "./src/components/Background/";
+import {Inter_400Regular, Inter_500Medium} from "@expo-google-fonts/inter";
+import {Rajdhani_500Medium, Rajdhani_700Bold} from "@expo-google-fonts/rajdhani";
+import {LogBox, StatusBar} from "react-native";
+import {Routes} from "./src/routes/"
+import {Background} from "./src/components/Background/";
+import {AuthProvider} from "./src/hooks/auth";
 
-export default function App(){
-  const [fontsLoaded] = useFonts({
-    Inter_400Regular,
-    Inter_500Medium,
-    Rajdhani_500Medium,
-    Rajdhani_700Bold
-  });
+LogBox.ignoreAllLogs(true);
 
-  if(!fontsLoaded){
-    return <AppLoading />
-  }
+export default function App() {
+    const [fontsLoaded] = useFonts({
+        Inter_400Regular,
+        Inter_500Medium,
+        Rajdhani_500Medium,
+        Rajdhani_700Bold
+    });
 
-  return(
-    <Background>
-      <StatusBar
-          barStyle="light-content"
-          backgroundColor="transparent"
-          translucent
-      />
+    if (!fontsLoaded) {
+        return <AppLoading/>
+    }
 
-      <Routes />
-    </Background>
-  );
+    return (
+        <Background>
+            <StatusBar
+                barStyle="light-content"
+                backgroundColor="transparent"
+                translucent
+            />
+            <AuthProvider>
+                <Routes/>
+            </AuthProvider>
+        </Background>
+    );
 }

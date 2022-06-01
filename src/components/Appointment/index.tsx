@@ -7,13 +7,9 @@ import CalendarSvg from '../../assets/calendar.svg';
 import {categories} from "../../utils/categories";
 import {GuildIcon} from "../GuildIcon";
 import {theme} from "../../global/styles/theme";
+import {GuildProps} from "../Guild";
+import {LinearGradient} from "expo-linear-gradient";
 
-export type GuildProps = {
-    id: string,
-    name: string,
-    icon: null,
-    owner: boolean;
-}
 
 export type  AppoitmentProps = {
     id: string,
@@ -35,8 +31,12 @@ export function Appointment({data, ...rest}: Props) {
     return (
         <TouchableOpacity {...rest}>
             <View style={styles.container}>
-                <GuildIcon />
-
+                {/*<LinearGradient*/}
+                {/*                colors={[theme.colors.secondary50, theme.colors.secondary70]}*/}
+                {/*                style={styles.guildIconContainer}*/}
+                {/*>*/}
+                    <GuildIcon />
+                {/*</LinearGradient>*/}
                 <View style={styles.content}>
                     <View style={styles.header}>
                         <Text style={styles.title}>

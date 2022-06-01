@@ -13,6 +13,7 @@ export function ModalView({children, closeModal, ...rest}: Props) {
         <Modal
             transparent={true}
             animationType={"slide"}
+            statusBarTranslucent={true}
             {...rest}
         >
             <TouchableWithoutFeedback onPress={closeModal}>

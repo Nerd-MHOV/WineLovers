@@ -41,54 +41,6 @@ export function Home() {
             date: '22/06 às 20:40h',
             description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
         },
-        {
-            id: '1',
-            guild: {
-                id: '1',
-                name: 'Perez Cruz',
-                icon: null,
-                owner: true
-            },
-            category: '2',
-            date: '22/06 às 20:40h',
-            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
-        },
-        {
-            id: '1',
-            guild: {
-                id: '1',
-                name: 'Perez Cruz',
-                icon: null,
-                owner: true
-            },
-            category: '2',
-            date: '22/06 às 20:40h',
-            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
-        },
-        {
-            id: '1',
-            guild: {
-                id: '1',
-                name: 'Perez Cruz',
-                icon: null,
-                owner: true
-            },
-            category: '2',
-            date: '22/06 às 20:40h',
-            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
-        },
-        {
-            id: '1',
-            guild: {
-                id: '1',
-                name: 'Perez Cruz',
-                icon: null,
-                owner: true
-            },
-            category: '2',
-            date: '22/06 às 20:40h',
-            description: 'É hoje que vamos cheegar ao challenger sem perder uma partida da md10'
-        }
     ]
 
     function handleCategorySelect(categoryId: string) {

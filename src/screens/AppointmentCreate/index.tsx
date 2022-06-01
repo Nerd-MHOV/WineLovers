@@ -33,7 +33,7 @@ export function AppointmentCreate() {
     }
 
     function handleCloseGuilds() {
-        setOpenGuildsModal(true);
+        setOpenGuildsModal(false);
     }
 
     function handleGuildSelect(guildSelect: GuildProps){
@@ -41,8 +41,14 @@ export function AppointmentCreate() {
         setOpenGuildsModal(false)
     }
 
+    function handleCategorySelect(categoryId: string) {
+        setCategory(categoryId);
+    }
+
     return (
         <KeyboardAvoidingView style={styles.container} behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+            <Background>
+
             <ScrollView>
                 <Header title={"Detalhes"}/>
 
@@ -50,7 +56,7 @@ export function AppointmentCreate() {
                     Categoria
                 </Text>
 
-                <CategorySelect categorySelected={category} setCategory={setCategory} hasCheckBox/>
+                <CategorySelect categorySelected={category} setCategory={handleCategorySelect} hasCheckBox/>
 
                 <View style={styles.form}>
                     <TouchableOpacity onPress={handleOpenGuilds}>
@@ -70,7 +76,7 @@ export function AppointmentCreate() {
 
                     <View style={styles.field}>
                         <View>
-                            <Text style={styles.label}>
+                            <Text style={[styles.label, {marginBottom: 12}]}>
                                 Dia e mês
                             </Text>
 
@@ -82,7 +88,7 @@ export function AppointmentCreate() {
                         </View>
 
                         <View>
-                            <Text style={styles.label}>
+                            <Text style={[styles.label, {marginBottom: 12}]}>
                                 Hora e minuto
                             </Text>
 
@@ -117,6 +123,7 @@ export function AppointmentCreate() {
 
 
             </ScrollView>
+            </Background>
 
             <ModalView visible={openGuildsModal} closeModal={handleCloseGuilds}>
                 <Guilds handleGuildSelect={handleGuildSelect} />
